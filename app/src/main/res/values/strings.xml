@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">FireHome</string>
+    <string name="a11y_label">FireHome – bouton Accueil</string>
+    <string name="a11y_description">Ouvre FireHome à la place de l\'accueil Amazon quand tu appuies sur le bouton Accueil.</string>
+</resources>
