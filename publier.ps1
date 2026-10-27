@@ -36,5 +36,9 @@ if (-not $remote) {
 }
 
 git push -u origin main
+if ($LASTEXITCODE -ne 0) {
+    Write-Host "`nEchec de l'envoi. Verifie que le depot VIDE 'FireHome' existe sur https://github.com/new puis relance ce script." -ForegroundColor Red
+    exit 1
+}
 Write-Host "`nPublié ! " -ForegroundColor Green -NoNewline
 git remote get-url origin
